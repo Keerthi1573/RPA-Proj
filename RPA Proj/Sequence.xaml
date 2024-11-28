@@ -1,0 +1,207 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="653,933" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.MLServices;assembly=UiPath.MLServices" xmlns:uma="clr-namespace:UiPath.MLServices.Activities;assembly=UiPath.MLServices.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.MLServices</x:String>
+      <x:String>UiPath.MLServices.Enums</x:String>
+      <x:String>UiPath.MLServices.Activities</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="512,868" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="642,1882" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="a2f04aec-9dd1-48ee-8cda-cdf0bcceef0c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="608,1665" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Int32" Name="index" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='News'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Date'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='News Detail'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="546,189" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="a2f04aec-9dd1-48ee-8cda-cdf0bcceef0c" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.livemint.com/market/stock-market-news/latest-stock-market-news-on-november-20-2024-live-updates-11732062614259.html" DesignTimeRectangle="363, -614, 550, 6171" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='mainArea' parentid='box_11732062614259' tag='DIV' /&gt;" Guid="472b39bf-7ab4-44b2-a37b-a7fceaf4fc17" InformativeScreenshot="34698f4acdc35222d3928fd55821a071.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Stock Market News Today highlights on November 20, 2024 : Nvidia pulls back 1% ahead of Q3 results; Wall Street traders brace for $300 billion swing in mcap, stock up 20%% YTD | Stock Market News' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="546,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Scrap" WorkbookPath="Scrap.xlsx" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="546,1238" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,1051" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,963" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="jsonobj" />
+                        <Variable x:TypeArguments="njl:JObject" Name="jsonobject" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uma:MLSkills ApiKey="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Name="{x:Null}" NumberOfRetries="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SkillURL="{x:Null}" StatusCode="{x:Null}" TimeOutMs="{x:Null}" Connection="Robot" DisplayName="MLSkill" ExternApiFileType="JSON" sap:VirtualizedContainerService.HintSize="388,443" sap2010:WorkflowViewState.IdRef="MLSkills_1" Item="[ExtractDataTable(2).ToString]" JsonResponse="[jsonobj]" NextPageNum="2" RefreshList="False" TotalCount="1">
+                        <uma:MLSkills.MLSkillList>
+                          <scg:List x:TypeArguments="um:MLSkill" Capacity="4">
+                            <x:Reference>__ReferenceID0</x:Reference>
+                          </scg:List>
+                        </uma:MLSkills.MLSkillList>
+                        <uma:MLSkills.SelectedMLSkill>
+                          <um:MLSkill x:Name="__ReferenceID0" AccessUri="https://ai-uipath-we-b.deskover.com/mlskills/3d5ed2fa-59b6-425f-ac55-145be2f26cc8/675c6299-5dfa-4bf7-9eb6-d5ae87bbdba3/cluster-b/stocknewsanalysis" AccountId="3d5ed2fa-59b6-425f-ac55-145be2f26cc8" Description="" Id="f0e07edc-f3a6-4ce2-9137-60704d4450fc" InputDescription="Text to be analyzed.For example:&quot;I am dissatisfied with this service&quot;" InputType="JSON" Name="StockNewsAnalysis" OutputDescription="JSON with class name and confidence on that class prediction (between 0-1). Class prediction can be one of: &quot;Very Negative&quot;, &quot;Negative&quot;, &quot;Neutral&quot;, &quot;Positive&quot;, &quot;Very Positive&quot;. For example: {&quot;sentiment&quot;: &quot;Very Negative&quot;, &quot;confidence&quot;: 0.97}" ProjectId="8eade30f-538a-4cf8-87fc-9985797f74e8" TenantId="675c6299-5dfa-4bf7-9eb6-d5ae87bbdba3" />
+                        </uma:MLSkills.SelectedMLSkill>
+                      </uma:MLSkills>
+                      <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="388,122" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[jsonobject]" JsonString="[jsonobj]" />
+                      <ui:WriteCell Cell="[&quot;D&quot; + (index + 1).ToString()]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="388,148" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="Scrap" Text="[jsonobject(&quot;sentiment&quot;).ToString()]" WorkbookPath="Scrap.xlsx" />
+                      <ui:WriteCell Cell="[&quot;E&quot;+(index+1).ToString()]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="388,139" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="Sheet1" Text="[jsonobject(&quot;confidence&quot;).ToString()]" WorkbookPath="Scrap.xlsx" />
+                    </Sequence>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHDSURBVFhH7Zc9UsMwEIV9BI7AEXwEH4CCI9DSJTfwDZihowoVHUNDR+GaKidgaOgoGAYC4S9mn6I1K3nlkRIxbrIz30y80u6+2NJaLg6Op0m8nBYVUQeotJghVKcPEhMzoo0Ec6PEqE6GkpREY5NuAmJLLTejOgEFTkSibam1GkB1UkDK7Y5lptXqOTDRC8xJT4RzQROwkrXAnExkTVkcC04L+A+6hSkFbLPaU2kcAeTAPtcmBllclO3bZdW+nu0Fxxbn+70xgekTLKBbeAgM2cdtbVgtn6xnbd8PjRHyfn3Yrp7vrXdtuIYgzi8wC5IFdANDAvzC0r7uruyvvkGgrMEYAfTDuf1Q+/M4t6H5TNYQVBCgbj3N+J9oAnF38Bg+5yfW45qf31InCcDzxxiE+MbiMEczmVuwE7ATYAS425C6VygJiixvjnrNBoZdgDFNHAy7Q+mMVVIjgoUKwIbGYMgta8lOGNWKYRkFOK24ewxoJpgYgl80GkNjwHtx/b2MrIjxXsdWwLgHEisi50k4hH4kY2jCeIdSBhO9wBzEHcsZClA75IY4t12iOhkKHO/TTEJJxvk41UBiAo9HI/HzfFr8ArSfE7vgusZhAAAAAElFTkSuQmCC" InformativeScreenshot="1894dc6292e0cb20a65be270e4ca4f03.jpg" Selector="&lt;html app='chrome.exe' title='Stock Market News Today highlights on November 20, 2024 : Nvidia pulls back 1% ahead of Q3 results; Wall Street traders brace for $300 billion swing in mcap, stock up 20%% YTD | Stock Market News' /&gt;" Title="Stock Market News Today highlights on November 20, 2024 : Nvidia pulls back 1% ahead of Q3 results; Wall Street traders brace for $300 billion swing in mcap, stock up 20%% YTD | Stock Market News" Url="https://www.livemint.com/market/stock-market-news/latest-stock-market-news-on-november-20-2024-live-updates-11732062614259.html" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
